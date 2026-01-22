@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "O2 Poczta Cleaner",
+  "version": "1.0",
+  "description": "Hides email rows containing '/o2' from the inbox.",
+  "content_scripts": [
+    {
+      "matches": ["*://poczta.o2.pl/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
